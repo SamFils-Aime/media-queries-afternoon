@@ -1,0 +1,181 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+nav{
+  background-image: url( 'https://design-milk.com/images/2015/05/Apartamento-A3_tiago-patricio-rodrigues-1.jpg') ;
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  width: 800vw;
+  height: 70vh;
+}
+.header{
+  position: sticky;
+  top: 10px;
+}
+menu{
+ 
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 1;
+}
+img {
+  width: 0px;
+  height: 0px;
+}
+#Bootstrap {
+  font-family: "Brush Script MT", cursive; font-size: 60px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; ;
+  color: gold;
+  display: flex;
+  padding-top: 30px;
+  padding-left: 120px;
+  position: relative;
+  height: auto;
+  background: -webkit-linear-gradient(orangered,transparent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+ul, .menuIsOpen{
+  width: 50vw;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 15px; font-style: normal; font-variant: normal; font-weight:lighter; line-height: 26.4px; 
+}
+
+li{
+  padding-left: 10 px;
+}
+.menuIsOpen{
+  
+  width: 100vw;
+  height: 200px;
+  transform: translateY(-275px);
+  transition: .5s;
+  z-index: inherit 0;
+  position: relative;
+  list-style-type: none;
+}
+.menuIsOpen ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100vw;
+  height: 100%;
+}
+.menuIsOpen ul li{
+  width: 80vw;
+  height: 100%;
+  text-align: start;
+  padding-left: 10px;
+}
+ ul li:hover{
+  color: yellow;
+}
+#drop li:hover{
+  color: yellow;
+}
+#menuopen{
+  transform: translateY(0);
+
+}
+.welcome{
+  width: 100vw;
+  height: auto;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-style: normal; font-variant: normal; font-weight:lighter; line-height: 26.4px; 
+}
+.welcome:hover, .welcome h2:hover{
+  color: yellow;
+}
+button{
+    background-color: orangered;
+    border-radius:5px ;
+    border: none;
+    color: white;
+    margin-top: 10px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-style: normal; font-variant: normal; font-weight:lighter; line-height: 26.4px; 
+
+}
+button:hover{
+  background-color: teal;
+}
+
+
+@media (max-Width: 600px) {
+  #menu ul li{
+    display: none;
+
+  }
+  img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+  }
+  #Bootstrap{
+    padding-left: 40vw;
+  }
+  nav{
+    height: 150vh;
+    background-size: 100vh;
+  }
+  .menuIsOpen ul li{
+    text-align: center;
+  }
+}
